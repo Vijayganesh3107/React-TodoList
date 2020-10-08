@@ -86,6 +86,8 @@ var App = (props) => {
     setTask(tasks.filter((item, index) => index != itemindex));
   };
 
+  //   var pendingTaskCount = tasks.filter((item) => !item.completed).length;
+
   return (
     <Fragment>
       <h1>{props.title}</h1>
@@ -104,17 +106,17 @@ var App = (props) => {
       </div>
       <div className="row">
         <div className="col-6 ">
-          <h2 className="mt-5">All Low Priority Tasks</h2>
+          <h2 className="mt-5">Pending Low Priority Tasks</h2>
           <LowTable tasks={tasks}></LowTable>
         </div>
         <div className="col-6">
-          <h2 className="mt-5">All Medium Priority Tasks</h2>
+          <h2 className="mt-5">Pending Medium Priority Tasks</h2>
           <MediumTable tasks={tasks}></MediumTable>
         </div>
       </div>
       <div className="row">
         <div className="col-6">
-          <h2 className="mt-5">All High Priority Tasks</h2>
+          <h2 className="mt-5">Pending High Priority Tasks</h2>
           <HighTable tasks={tasks}></HighTable>
         </div>
         <div className="col-6">

@@ -30,7 +30,7 @@ const MediumTable = (props) => {
           })}
         </tbody>
       </table>
-      <h3>The total no of Medium Priority Tasks:{count}</h3>
+      <h3>Pending Medium Priority Tasks:{count}</h3>
     </Fragment>
   );
 };

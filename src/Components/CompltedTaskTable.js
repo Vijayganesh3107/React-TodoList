@@ -31,7 +31,7 @@ const CompltedTaskTable = (props) => {
           })}
         </tbody>
       </table>
-      <h3>The complted task:{count}</h3>
+      <h3>All Completed tasks:{count}</h3>
     </Fragment>
   );
 };

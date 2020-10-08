@@ -30,7 +30,7 @@ const LowTable = (props) => {
           })}
         </tbody>
       </table>
-      <h3>The total no of low priority tasks:{count} </h3>
+      <h3>Pending low priority tasks:{count} </h3>
     </Fragment>
   );
 };

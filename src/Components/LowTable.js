@@ -30,7 +30,9 @@ const LowTable = (props) => {
           })}
         </tbody>
       </table>
-      <h3>Pending low priority tasks:{count} </h3>
+      <p className="text-right">
+        <b>Pending low priority tasks:{count}</b>
+      </p>
     </Fragment>
   );
 };

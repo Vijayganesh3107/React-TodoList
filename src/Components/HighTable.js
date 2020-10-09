@@ -30,7 +30,9 @@ const HighTable = (props) => {
           })}
         </tbody>
       </table>
-      <h3>Pending High priority tasks:{count} </h3>
+      <p className="text-right">
+        <b>Pending High priority tasks:{count}</b>
+      </p>
     </Fragment>
   );
 };

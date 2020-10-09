@@ -10,10 +10,6 @@ import HighTable from "./Components/HighTable";
 import CompltedTaskTable from "./Components/CompltedTaskTable";
 
 var App = (props) => {
-  //   var count = 0;
-  //   var pendingcount = 0;
-  //   var completedtaskcount = localStorage.getItem("CompletedCount");
-  //   var AllTasks = localStorage.getItem("AllTasks");
   const [tasks, setTask] = useState([]);
 
   const ToggleTask = (indexfromList) => {
@@ -39,7 +35,7 @@ var App = (props) => {
       },
     ]);
   };
-  //   pendingcount = AllTasks - completedtaskcount;
+
   const ChangtoLow = (listindex) => {
     setTask(
       tasks.map((item, index) => {
@@ -85,8 +81,6 @@ var App = (props) => {
   const DeleteTask = (itemindex) => {
     setTask(tasks.filter((item, index) => index != itemindex));
   };
-
-  //   var pendingTaskCount = tasks.filter((item) => !item.completed).length;
 
   return (
     <Fragment>
